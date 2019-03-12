@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:text="Start QUIZ"
+
+
+        />
+
+    <Button
+        android:id="@+id/button_add_question"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:text="Dodaj pytanie" />
+
+    <Button
+        android:id="@+id/button_start_quiz_a"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add_question"
+        android:layout_centerHorizontal="true"
+        android:text="ODPOWIADAJ NA PYTANIA" />
+
+    <Button
+        android:id="@+id/button_highscores"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_quiz_a"
+        android:layout_centerHorizontal="true"
+        android:text="HIGHSCORE" />
+
+    <TextView
+        android:id="@+id/textView_czyje_pytania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_highscores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:text="Wybierz na czyje pytania chcesz odpowiadac"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner_name"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_czyje_pytania"
+        android:layout_alignStart="@id/button_start_quiz_a"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:padding="16dp"
+
+    tools:context=".AddQuestion">
+
+
+    <EditText
+        android:id="@+id/editText_imie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Podaj swoje imie" />
+
+
+    <EditText
+        android:id="@+id/editText_pytanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_imie"
+        android:hint="Wpisz tresc pytania" />
+
+
+    <EditText
+        android:id="@+id/editText_odp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_pytanie"
+        android:hint="odpowiedz nr: 1" />
+
+
+    <EditText
+        android:id="@+id/editText_odp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_odp1"
+        android:hint="odpowiedz nr: 2" />
+
+    <EditText
+        android:id="@+id/editText_odp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_odp2"
+        android:hint="odpowiedz nr: 3" />
+
+    <EditText
+        android:id="@+id/editText_odp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_odp3"
+        android:hint="odpowiedz nr: 4" />
+
+    <EditText
+        android:id="@+id/editText_poprawna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_odp4"
+        android:hint="odpowiedz poprawna: 1/2/3/4" />
+
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_odp4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="Dodaj pytanie" />
+
+
+</RelativeLayout>
